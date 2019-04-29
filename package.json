@@ -1,0 +1,45 @@
+{
+  "name": "spinal-browser-template",
+  "version": "1.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "rm -rf wwww && NODE_ENV=production node bin/parcel.config.js",
+    "dev": "NODE_ENV=development node bin/parcel.config.js",
+    "reset": "rm -fr www",
+    "postinstall": "npm run spinal-register",
+    "spinal-register": "spinal-register --browser 'spinal-browser-'",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "create_maintainer_env": "bin/parcel.config.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.8.1",
+    "aes-js": "^3.1.2",
+    "app.vue": "^0.1.10",
+    "bootstrap": "^4.3.1",
+    "bootstrap-vue": "^2.0.0-rc.16",
+    "jquery": "^3.3.1",
+    "lodash.throttle": "4.1.1",
+    "parcel-bundler": "^1.12.3",
+    "selectbar": "^1.0.1",
+    "spinal-core-connectorjs_type": "git+https://github.com/spinalcom/spinal-core-connectorjs_type.git",
+    "spinal-core-system": "git+https://github.com/spinalcom/spinal-core-system.git",
+    "spinal-env-drive-core": "git+https://github.com/spinalcom/spinal-env-drive-core.git",
+    "spinal-env-maintainer-btn-joint": "git+https://github.com/spinalcom/spinal-env-maintainer-btn-joint.git",
+    "spinal-env-viewer-graph-service": "git+https://github.com/spinalcom/Spinal-Graph-Service.git",
+    "store": "^2.0.12",
+    "vue-material": "1.0.0-beta-10.2",
+    "vue": "^2.6.10",
+    "vue-sidebar-menu": "^3.6.3",
+    "vuesax": "^3.8.59"
+  },
+  "devDependencies": {
+    "@vue/component-compiler-utils": "^2.6.0",
+    "stylus": "^0.54.5"
+  }
+}
