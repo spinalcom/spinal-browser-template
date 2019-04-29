@@ -1,2 +1,2 @@
 # spinal-browser-template
-a specific browser for template.
+Create your own cute brower !
